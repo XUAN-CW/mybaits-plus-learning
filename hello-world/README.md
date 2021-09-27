@@ -4,6 +4,7 @@ date: 2021-09-27 17:42:41
 tags: 
 categories: 
 id: 1632735761443854700
+
 ---
 
 # 概述
@@ -79,7 +80,7 @@ mybatis-plus的代码生成器当然要导入mybatis-plus 依赖，这里在spri
         </dependency>
 ```
 
-##  [application.properties](src\main\resources\application.properties) 
+##  [application.properties](src/main/resources/application.properties) 
 
 配置数据库如下：
 
@@ -90,7 +91,7 @@ spring.datasource.username=mp
 spring.datasource.password=mp
 ```
 
-##  [HelloWorldApplicationTests.java](src\test\java\com\example\helloworld\HelloWorldApplicationTests.java) 
+##  [HelloWorldApplicationTests.java](src/test/java/com/example/helloworld/HelloWorldApplicationTests.java) 
 
 运行 **codeGenerator** 生成代码
 
