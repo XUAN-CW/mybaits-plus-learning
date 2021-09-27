@@ -95,5 +95,35 @@ spring.datasource.password=mp
 
 运行 **codeGenerator** 生成代码
 
+# 错误处理
+
+## @Mapper
+
+如果你想把 mapper 交给 spring 管理，那么就在 mapper 上加 `@Mapper` 
+
+## 自定义语句执行失败
+
+```properties
+mybatis-plus.mapper-locations=classpath:com/example/hellow/mapper/xml/*.xml
+```
+
+```xml
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+    </build>
+```
+
+
+
 
 
